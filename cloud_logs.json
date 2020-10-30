@@ -1,0 +1,2708 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:25.134271Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.start",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.start",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/kv-store",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/kv-store",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.start"
+      },
+      "response": {
+        "endTime": "2020-10-23T16:14:25.010-07:00",
+        "insertTime": "2020-10-23T16:14:25.006-07:00",
+        "user": "srbaddam@iu.edu",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494864713-5b25ebdcf7585-082d201a-48908aae",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/kv-store",
+        "id": "7423573028790787391",
+        "operationType": "start",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "status": "DONE",
+        "progress": "100",
+        "name": "operation-1603494864713-5b25ebdcf7585-082d201a-48908aae",
+        "startTime": "2020-10-23T16:14:25.010-07:00",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/7423573028790787391",
+        "targetId": "4854380260120410549",
+        "@type": "type.googleapis.com/operation"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "-fj5eacd7kog",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "4854380260120410549"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:24.765422Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494864713-5b25ebdcf7585-082d201a-48908aae",
+      "producer": "compute.googleapis.com",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:25.978752801Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:40.276897Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.disks.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/disks/map0",
+            "type": "compute.disks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.useExternalIp",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.instances.setMetadata",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.instances.setServiceAccount",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert",
+        "disks": [
+          {
+            "initializeParams": {
+              "sourceImage": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/global/images/image-3"
+            },
+            "autoDelete": true,
+            "boot": true
+          }
+        ],
+        "name": "map0",
+        "machineType": "zones/us-east4-b/machineTypes/n1-standard-1",
+        "networkInterfaces": [
+          {
+            "accessConfigs": [
+              {
+                "type": "ONE_TO_ONE_NAT",
+                "name": "External NAT"
+              }
+            ],
+            "network": "global/networks/default"
+          }
+        ],
+        "serviceAccounts": [
+          {
+            "email": "default",
+            "scopes": [
+              "https://www.googleapis.com/auth/devstorage.read_write",
+              "https://www.googleapis.com/auth/logging.write"
+            ]
+          }
+        ]
+      },
+      "response": {
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map0",
+        "@type": "type.googleapis.com/operation",
+        "id": "1711050153248349488",
+        "insertTime": "2020-10-23T16:14:40.078-07:00",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "progress": "0",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/1711050153248349488",
+        "operationType": "insert",
+        "targetId": "7056788392284970288",
+        "startTime": "2020-10-23T16:14:40.082-07:00",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494879160-5b25ebeabe803-1689d0cf-a3d1b09f",
+        "name": "operation-1603494879160-5b25ebeabe803-1689d0cf-a3d1b09f",
+        "status": "RUNNING",
+        "user": "srbaddam@iu.edu"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "ldanz1d7imq",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:39.229103Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879160-5b25ebeabe803-1689d0cf-a3d1b09f",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:40.774393876Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:40.254882Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.disks.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/disks/map1",
+            "type": "compute.disks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.useExternalIp",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.instances.setMetadata",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.instances.setServiceAccount",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+      "request": {
+        "machineType": "zones/us-east4-b/machineTypes/n1-standard-1",
+        "serviceAccounts": [
+          {
+            "scopes": [
+              "https://www.googleapis.com/auth/devstorage.read_write",
+              "https://www.googleapis.com/auth/logging.write"
+            ],
+            "email": "default"
+          }
+        ],
+        "name": "map1",
+        "disks": [
+          {
+            "initializeParams": {
+              "sourceImage": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/global/images/image-3"
+            },
+            "boot": true,
+            "autoDelete": true
+          }
+        ],
+        "@type": "type.googleapis.com/compute.instances.insert",
+        "networkInterfaces": [
+          {
+            "accessConfigs": [
+              {
+                "name": "External NAT",
+                "type": "ONE_TO_ONE_NAT"
+              }
+            ],
+            "network": "global/networks/default"
+          }
+        ]
+      },
+      "response": {
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "progress": "0",
+        "operationType": "insert",
+        "id": "419536848637844784",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/419536848637844784",
+        "@type": "type.googleapis.com/operation",
+        "startTime": "2020-10-23T16:14:40.058-07:00",
+        "status": "RUNNING",
+        "insertTime": "2020-10-23T16:14:40.055-07:00",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494879211-5b25ebeacb08a-6789b182-a4537eb3",
+        "name": "operation-1603494879211-5b25ebeacb08a-6789b182-a4537eb3",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map1",
+        "targetId": "7133117305528966448",
+        "user": "srbaddam@iu.edu"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "tettj1d6kma",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:39.268532Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879211-5b25ebeacb08a-6789b182-a4537eb3",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:41.027749920Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:40.399817Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.disks.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/disks/map2",
+            "type": "compute.disks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.useExternalIp",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.instances.setMetadata",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.instances.setServiceAccount",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+      "request": {
+        "disks": [
+          {
+            "initializeParams": {
+              "sourceImage": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/global/images/image-3"
+            },
+            "boot": true,
+            "autoDelete": true
+          }
+        ],
+        "name": "map2",
+        "networkInterfaces": [
+          {
+            "accessConfigs": [
+              {
+                "type": "ONE_TO_ONE_NAT",
+                "name": "External NAT"
+              }
+            ],
+            "network": "global/networks/default"
+          }
+        ],
+        "@type": "type.googleapis.com/compute.instances.insert",
+        "machineType": "zones/us-east4-b/machineTypes/n1-standard-1",
+        "serviceAccounts": [
+          {
+            "scopes": [
+              "https://www.googleapis.com/auth/devstorage.read_write",
+              "https://www.googleapis.com/auth/logging.write"
+            ],
+            "email": "default"
+          }
+        ]
+      },
+      "response": {
+        "operationType": "insert",
+        "progress": "0",
+        "@type": "type.googleapis.com/operation",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494879307-5b25ebeae273e-510f5a74-d4f4e504",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map2",
+        "targetId": "7374350599044652336",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/9032212875858337039",
+        "name": "operation-1603494879307-5b25ebeae273e-510f5a74-d4f4e504",
+        "status": "RUNNING",
+        "user": "srbaddam@iu.edu",
+        "insertTime": "2020-10-23T16:14:40.234-07:00",
+        "id": "9032212875858337039",
+        "startTime": "2020-10-23T16:14:40.238-07:00"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "-dku1dmd6zug",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:39.359150Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879307-5b25ebeae273e-510f5a74-d4f4e504",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:40.849910435Z"
+  },
+  {
+    "insertId": "0",
+    "jsonPayload": {
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "startupEvent": {}
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:44.686540940Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:46.706724287Z"
+  },
+  {
+    "insertId": "0",
+    "jsonPayload": {
+      "startupEvent": {},
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:44.788126078Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:46.794680749Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert"
+      }
+    },
+    "insertId": "r7ejx5d13o4",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:45.099718Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879160-5b25ebeabe803-1689d0cf-a3d1b09f",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:46.064408092Z"
+  },
+  {
+    "insertId": "0",
+    "jsonPayload": {
+      "startupEvent": {},
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7133117305528966448",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:45.228085815Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:47.249864569Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert"
+      }
+    },
+    "insertId": "-gd28wnd12s0",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:45.443313Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879307-5b25ebeae273e-510f5a74-d4f4e504",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:46.551272121Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert"
+      }
+    },
+    "insertId": "-3vjay6cnd2",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7133117305528966448"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:45.939336Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494879211-5b25ebeacb08a-6789b182-a4537eb3",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:46.710363452Z"
+  },
+  {
+    "insertId": "1",
+    "jsonPayload": {
+      "earlyBootReportEvent": {
+        "actualMeasurements": [
+          {
+            "hashAlgo": "SHA1",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "pcrNum": "PCR_0"
+          },
+          {
+            "value": "M06PZr+mknYxkxGa/T/l5nXgh7c=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_4"
+          },
+          {
+            "pcrNum": "PCR_5",
+            "hashAlgo": "SHA1",
+            "value": "ZonJnnFtKkH/veGcZRpESSVHUnA="
+          },
+          {
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7"
+          }
+        ],
+        "policyEvaluationPassed": true,
+        "policyMeasurements": [
+          {
+            "hashAlgo": "SHA1",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "pcrNum": "PCR_0"
+          },
+          {
+            "pcrNum": "PCR_7",
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1"
+          }
+        ]
+      },
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:46.528506460Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:46.794680749Z"
+  },
+  {
+    "insertId": "1",
+    "jsonPayload": {
+      "earlyBootReportEvent": {
+        "actualMeasurements": [
+          {
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_0",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q="
+          },
+          {
+            "hashAlgo": "SHA1",
+            "value": "M06PZr+mknYxkxGa/T/l5nXgh7c=",
+            "pcrNum": "PCR_4"
+          },
+          {
+            "pcrNum": "PCR_5",
+            "hashAlgo": "SHA1",
+            "value": "ZonJnnFtKkH/veGcZRpESSVHUnA="
+          },
+          {
+            "pcrNum": "PCR_7",
+            "hashAlgo": "SHA1",
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g="
+          }
+        ],
+        "policyEvaluationPassed": true,
+        "policyMeasurements": [
+          {
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "pcrNum": "PCR_0",
+            "hashAlgo": "SHA1"
+          },
+          {
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7",
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g="
+          }
+        ]
+      },
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7374350599044652336",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:46.562760004Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:46.706724287Z"
+  },
+  {
+    "insertId": "1",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "bootCounter": "1",
+      "earlyBootReportEvent": {
+        "policyMeasurements": [
+          {
+            "pcrNum": "PCR_0",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "hashAlgo": "SHA1"
+          },
+          {
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7"
+          }
+        ],
+        "actualMeasurements": [
+          {
+            "pcrNum": "PCR_0",
+            "hashAlgo": "SHA1",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q="
+          },
+          {
+            "value": "M06PZr+mknYxkxGa/T/l5nXgh7c=",
+            "pcrNum": "PCR_4",
+            "hashAlgo": "SHA1"
+          },
+          {
+            "pcrNum": "PCR_5",
+            "hashAlgo": "SHA1",
+            "value": "ZonJnnFtKkH/veGcZRpESSVHUnA="
+          },
+          {
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7"
+          }
+        ],
+        "policyEvaluationPassed": true
+      }
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:47.022870516Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:14:47.249864569Z"
+  },
+  {
+    "insertId": "t571cbg24ep8he",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:55.7747Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) started."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:55.823248698Z",
+    "severity": "INFO",
+    "labels": {
+      "agent_version": "20200901.01-g1",
+      "instance_name": "map0"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "113",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.881537968Z"
+  },
+  {
+    "insertId": "2bf6g1ilkimd",
+    "jsonPayload": {
+      "message": "OSConfig Agent (version 20200901.01-g1) started.",
+      "localTimestamp": "2020-10-23T23:14:56.0651Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.080304653Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "map2",
+      "agent_version": "20200901.01-g1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "113",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.437737794Z"
+  },
+  {
+    "insertId": "hrkj4zfwxln9s",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:56.3740Z",
+      "message": "GCE Agent Started (version 20200813.01)"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.374043749Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "144",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.882801083Z"
+  },
+  {
+    "insertId": "k71glg3lsznar",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:56.5526Z",
+      "message": "GCE Agent Started (version 20200813.01)"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.553598848Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "144",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.821840094Z"
+  },
+  {
+    "insertId": "hrkj4zfwxln9t",
+    "jsonPayload": {
+      "message": "Instance ID changed, running first-boot actions",
+      "localTimestamp": "2020-10-23T23:14:56.6319Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7056788392284970288",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.631972648Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "instance_setup.go",
+      "line": "173",
+      "function": "main.agentInit"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.882801083Z"
+  },
+  {
+    "insertId": "19i66hog23hi167",
+    "jsonPayload": {
+      "message": "GCE Agent Started (version 20200813.01)",
+      "localTimestamp": "2020-10-23T23:14:56.7481Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.748158718Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "144",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:58.176387295Z"
+  },
+  {
+    "insertId": "k71glg3lsznas",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:56.9472Z",
+      "message": "Instance ID changed, running first-boot actions"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7374350599044652336"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:56.947368377Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "instance_setup.go",
+      "line": "173",
+      "function": "main.agentInit"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.821840094Z"
+  },
+  {
+    "insertId": "hrkj4zfwxln9u",
+    "jsonPayload": {
+      "message": "Updating keys for user Sumith.",
+      "localTimestamp": "2020-10-23T23:14:57.0039Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7056788392284970288",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:57.003933424Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "non_windows_accounts.go",
+      "line": "152",
+      "function": "main.(*accountsMgr).set"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.882801083Z"
+  },
+  {
+    "insertId": "hrkj4zfwxloui",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:56.9846Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) started."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:57.017619769Z",
+    "severity": "INFO",
+    "labels": {
+      "agent_version": "20200901.01-g1",
+      "instance_name": "map1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "113",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:58.196217353Z"
+  },
+  {
+    "insertId": "19i66hog23hi168",
+    "jsonPayload": {
+      "message": "Instance ID changed, running first-boot actions",
+      "localTimestamp": "2020-10-23T23:14:57.0748Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7133117305528966448",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:57.074903577Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "instance_setup.go",
+      "line": "173",
+      "function": "main.agentInit"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:58.176387295Z"
+  },
+  {
+    "insertId": "k71glg3lsznat",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:57.2019Z",
+      "message": "Updating keys for user Sumith."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7374350599044652336",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:57.201984110Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "non_windows_accounts.go",
+      "line": "152",
+      "function": "main.(*accountsMgr).set"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:57.821840094Z"
+  },
+  {
+    "insertId": "19i66hog23hi169",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:57.5567Z",
+      "message": "Updating keys for user Sumith."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:57.556772452Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "non_windows_accounts.go",
+      "line": "152",
+      "function": "main.(*accountsMgr).set"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:58.176387295Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:59.301755Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.stop",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      },
+      "response": {
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/4847731813956640029",
+        "insertTime": "2020-10-23T16:14:58.868-07:00",
+        "progress": "0",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494898573-5b25ebfd42020-b32dd729-d1dd508d",
+        "name": "operation-1603494898573-5b25ebfd42020-b32dd729-d1dd508d",
+        "targetId": "7056788392284970288",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map0",
+        "@type": "type.googleapis.com/operation",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "status": "RUNNING",
+        "id": "4847731813956640029",
+        "operationType": "stop",
+        "user": "srbaddam@iu.edu",
+        "startTime": "2020-10-23T16:14:59.175-07:00"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "kjp4egd7ro4",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:58.619190Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898573-5b25ebfd42020-b32dd729-d1dd508d",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:00.140369033Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:58.962038Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.stop",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      },
+      "response": {
+        "id": "7446204010337328413",
+        "progress": "0",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "@type": "type.googleapis.com/operation",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map2",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494898577-5b25ebfd43106-9e58408f-fa7a1612",
+        "status": "RUNNING",
+        "operationType": "stop",
+        "name": "operation-1603494898577-5b25ebfd43106-9e58408f-fa7a1612",
+        "user": "srbaddam@iu.edu",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/7446204010337328413",
+        "targetId": "7374350599044652336",
+        "startTime": "2020-10-23T16:14:58.859-07:00",
+        "insertTime": "2020-10-23T16:14:58.839-07:00"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "-je8eed7n7w",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7374350599044652336",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:58.625495Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898577-5b25ebfd43106-9e58408f-fa7a1612",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:59.591541204Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:14:58.958889Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.stop",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      },
+      "response": {
+        "@type": "type.googleapis.com/operation",
+        "targetId": "7133117305528966448",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "user": "srbaddam@iu.edu",
+        "insertTime": "2020-10-23T16:14:58.816-07:00",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/5996667215250644253",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/map1",
+        "status": "RUNNING",
+        "name": "operation-1603494898563-5b25ebfd3fb5d-255dec74-f85d91ea",
+        "startTime": "2020-10-23T16:14:58.836-07:00",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494898563-5b25ebfd3fb5d-255dec74-f85d91ea",
+        "operationType": "stop",
+        "id": "5996667215250644253",
+        "progress": "0"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "yez5pyd7mji",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:58.628325Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898563-5b25ebfd3fb5d-255dec74-f85d91ea",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:14:59.030327759Z"
+  },
+  {
+    "insertId": "1mty5veg3m04pc3",
+    "jsonPayload": {
+      "message": "OSConfig Agent (version 20200901.01-g1) shutting down.",
+      "localTimestamp": "2020-10-23T23:14:59.2301Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7374350599044652336",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:59.230181601Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "map2",
+      "agent_version": "20200901.01-g1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "106",
+      "function": "main.run.func1"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:59.478961622Z"
+  },
+  {
+    "insertId": "1yrlwtvg3m4k98v",
+    "jsonPayload": {
+      "message": "OSConfig Agent (version 20200901.01-g1) shutting down.",
+      "localTimestamp": "2020-10-23T23:14:59.3251Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:59.325176066Z",
+    "severity": "INFO",
+    "labels": {
+      "agent_version": "20200901.01-g1",
+      "instance_name": "map1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "106",
+      "function": "main.run.func1"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:59.493093922Z"
+  },
+  {
+    "insertId": "x18jhyg3i6u90w",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:14:59.5060Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) shutting down."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:59.506132004Z",
+    "severity": "INFO",
+    "labels": {
+      "agent_version": "20200901.01-g1",
+      "instance_name": "map0"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "106",
+      "function": "main.run.func1"
+    },
+    "receiveTimestamp": "2020-10-23T23:14:59.918842366Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:15:00.775165Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.disks.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/disks/reduce0",
+            "type": "compute.disks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.useExternalIp",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.instances.setMetadata",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.instances.setServiceAccount",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+      "request": {
+        "disks": [
+          {
+            "autoDelete": true,
+            "initializeParams": {
+              "sourceImage": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/global/images/image-3"
+            },
+            "boot": true
+          }
+        ],
+        "networkInterfaces": [
+          {
+            "network": "global/networks/default",
+            "accessConfigs": [
+              {
+                "type": "ONE_TO_ONE_NAT",
+                "name": "External NAT"
+              }
+            ]
+          }
+        ],
+        "machineType": "zones/us-east4-b/machineTypes/n1-standard-1",
+        "name": "reduce0",
+        "@type": "type.googleapis.com/compute.instances.insert",
+        "serviceAccounts": [
+          {
+            "scopes": [
+              "https://www.googleapis.com/auth/devstorage.read_write",
+              "https://www.googleapis.com/auth/logging.write"
+            ],
+            "email": "default"
+          }
+        ]
+      },
+      "response": {
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494899829-5b25ebfe7493e-75ae7396-702ae4c7",
+        "insertTime": "2020-10-23T16:15:00.573-07:00",
+        "startTime": "2020-10-23T16:15:00.575-07:00",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/6803433206411353371",
+        "name": "operation-1603494899829-5b25ebfe7493e-75ae7396-702ae4c7",
+        "status": "RUNNING",
+        "user": "srbaddam@iu.edu",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+        "targetId": "7852608551917640987",
+        "progress": "0",
+        "id": "6803433206411353371",
+        "@type": "type.googleapis.com/operation",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "operationType": "insert"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "-samezid6enk",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7852608551917640987",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:59.889788Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494899829-5b25ebfe7493e-75ae7396-702ae4c7",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:01.717799226Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:15:00.794301Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.disks.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/disks/reduce1",
+            "type": "compute.disks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.use",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.subnetworks.useExternalIp",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/regions/us-east4/subnetworks/default",
+            "type": "compute.subnetworks"
+          }
+        },
+        {
+          "permission": "compute.instances.setMetadata",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+            "type": "compute.instances"
+          }
+        },
+        {
+          "permission": "compute.instances.setServiceAccount",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+      "request": {
+        "serviceAccounts": [
+          {
+            "email": "default",
+            "scopes": [
+              "https://www.googleapis.com/auth/devstorage.read_write",
+              "https://www.googleapis.com/auth/logging.write"
+            ]
+          }
+        ],
+        "networkInterfaces": [
+          {
+            "network": "global/networks/default",
+            "accessConfigs": [
+              {
+                "name": "External NAT",
+                "type": "ONE_TO_ONE_NAT"
+              }
+            ]
+          }
+        ],
+        "@type": "type.googleapis.com/compute.instances.insert",
+        "name": "reduce1",
+        "machineType": "zones/us-east4-b/machineTypes/n1-standard-1",
+        "disks": [
+          {
+            "initializeParams": {
+              "sourceImage": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/global/images/image-3"
+            },
+            "boot": true,
+            "autoDelete": true
+          }
+        ]
+      },
+      "response": {
+        "targetId": "2829298880795827483",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "name": "operation-1603494899815-5b25ebfe713ef-4b6e9fc4-1f28788f",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/4383041473793154331",
+        "progress": "0",
+        "status": "RUNNING",
+        "@type": "type.googleapis.com/operation",
+        "operationType": "insert",
+        "startTime": "2020-10-23T16:15:00.668-07:00",
+        "id": "4383041473793154331",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+        "user": "srbaddam@iu.edu",
+        "insertTime": "2020-10-23T16:15:00.666-07:00",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494899815-5b25ebfe713ef-4b6e9fc4-1f28788f"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "vx9vdpd6hfa",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:14:59.890196Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494899815-5b25ebfe713ef-4b6e9fc4-1f28788f",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:01.774040473Z"
+  },
+  {
+    "insertId": "2",
+    "jsonPayload": {
+      "shutdownEvent": {},
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7133117305528966448",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:01.141589100Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:03.164695227Z"
+  },
+  {
+    "insertId": "2",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "shutdownEvent": {},
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7374350599044652336"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:01.565962839Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:03.584362397Z"
+  },
+  {
+    "insertId": "2",
+    "jsonPayload": {
+      "shutdownEvent": {},
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:01.993778034Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:04.012515414Z"
+  },
+  {
+    "insertId": "0",
+    "jsonPayload": {
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "startupEvent": {}
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7852608551917640987",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:04.375720577Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:06.382467911Z"
+  },
+  {
+    "insertId": "0",
+    "jsonPayload": {
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "startupEvent": {},
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "2829298880795827483",
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:04.560020754Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:06.582466825Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert"
+      }
+    },
+    "insertId": "-nv057pcq6e",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7852608551917640987",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:04.613293Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494899829-5b25ebfe7493e-75ae7396-702ae4c7",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:05.724953813Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.insert",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.insert"
+      }
+    },
+    "insertId": "g3csx5cwy4",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:05.430910Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494899815-5b25ebfe713ef-4b6e9fc4-1f28788f",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:05.990742412Z"
+  },
+  {
+    "insertId": "1",
+    "jsonPayload": {
+      "earlyBootReportEvent": {
+        "policyEvaluationPassed": true,
+        "actualMeasurements": [
+          {
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_0"
+          },
+          {
+            "hashAlgo": "SHA1",
+            "value": "M06PZr+mknYxkxGa/T/l5nXgh7c=",
+            "pcrNum": "PCR_4"
+          },
+          {
+            "pcrNum": "PCR_5",
+            "hashAlgo": "SHA1",
+            "value": "ZonJnnFtKkH/veGcZRpESSVHUnA="
+          },
+          {
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7"
+          }
+        ],
+        "policyMeasurements": [
+          {
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_0",
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q="
+          },
+          {
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7",
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g="
+          }
+        ]
+      },
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "bootCounter": "1"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7852608551917640987",
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:06.054799206Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:06.382467911Z"
+  },
+  {
+    "insertId": "1",
+    "jsonPayload": {
+      "earlyBootReportEvent": {
+        "actualMeasurements": [
+          {
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_0"
+          },
+          {
+            "pcrNum": "PCR_4",
+            "hashAlgo": "SHA1",
+            "value": "M06PZr+mknYxkxGa/T/l5nXgh7c="
+          },
+          {
+            "hashAlgo": "SHA1",
+            "value": "ZonJnnFtKkH/veGcZRpESSVHUnA=",
+            "pcrNum": "PCR_5"
+          },
+          {
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g=",
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7"
+          }
+        ],
+        "policyEvaluationPassed": true,
+        "policyMeasurements": [
+          {
+            "value": "UcMj3gwMaU9GAc3QK+tY/xNin3Q=",
+            "pcrNum": "PCR_0",
+            "hashAlgo": "SHA1"
+          },
+          {
+            "hashAlgo": "SHA1",
+            "pcrNum": "PCR_7",
+            "value": "ZTDtLcumiAHHjKCHU/I5EYvq18g="
+          }
+        ]
+      },
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:06.285166924Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:06.582466825Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map2",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      }
+    },
+    "insertId": "rrfe22ct8g",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7374350599044652336",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:13.126449Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898577-5b25ebfd43106-9e58408f-fa7a1612",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:13.509887982Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      }
+    },
+    "insertId": "-8lal1scysi",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7133117305528966448",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:13.353524Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898563-5b25ebfd3fb5d-255dec74-f85d91ea",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:13.779715875Z"
+  },
+  {
+    "insertId": "z8mfagfcyi1h9",
+    "jsonPayload": {
+      "message": "OSConfig Agent (version 20200901.01-g1) started.",
+      "localTimestamp": "2020-10-23T23:15:14.2916Z"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7852608551917640987",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:14.301346916Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "reduce0",
+      "agent_version": "20200901.01-g1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "113",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:15.733884277Z"
+  },
+  {
+    "insertId": "b3x2uog27nnvrw",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:14.4817Z",
+      "message": "GCE Agent Started (version 20200813.01)"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7852608551917640987",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:14.482657262Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "144",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:15.827879564Z"
+  },
+  {
+    "insertId": "b3x2uog27nnvrx",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:14.7868Z",
+      "message": "Instance ID changed, running first-boot actions"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "7852608551917640987"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:14.786939462Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "instance_setup.go",
+      "line": "173",
+      "function": "main.agentInit"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:15.827879564Z"
+  },
+  {
+    "insertId": "b3x2uog27nnvry",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:15.1683Z",
+      "message": "Updating keys for user Sumith."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "7852608551917640987",
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:15.168444227Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "non_windows_accounts.go",
+      "line": "152",
+      "function": "main.(*accountsMgr).set"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:15.827879564Z"
+  },
+  {
+    "insertId": "198fxryg3cv7xwr",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:15.3108Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) started."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:15.325945096Z",
+    "severity": "INFO",
+    "labels": {
+      "agent_version": "20200901.01-g1",
+      "instance_name": "reduce1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "113",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:16.548833124Z"
+  },
+  {
+    "insertId": "w6ujy6g260fl50",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:15.4499Z",
+      "message": "GCE Agent Started (version 20200813.01)"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "2829298880795827483",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:15.449937458Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "144",
+      "function": "main.run"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:16.548296638Z"
+  },
+  {
+    "insertId": "w6ujy6g260fl51",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:15.6976Z",
+      "message": "Instance ID changed, running first-boot actions"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "2829298880795827483"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:15.697666827Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "instance_setup.go",
+      "line": "173",
+      "function": "main.agentInit"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:16.548296638Z"
+  },
+  {
+    "insertId": "w6ujy6g260fl52",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:16.3282Z",
+      "message": "Updating keys for user Sumith."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:16.328254699Z",
+    "severity": "INFO",
+    "logName": "projects/sumith-baddam/logs/GCEGuestAgent",
+    "sourceLocation": {
+      "file": "non_windows_accounts.go",
+      "line": "152",
+      "function": "main.(*accountsMgr).set"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:16.548296638Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:15:17.139945Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.stop",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      },
+      "response": {
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "targetId": "2829298880795827483",
+        "insertTime": "2020-10-23T16:15:17.017-07:00",
+        "@type": "type.googleapis.com/operation",
+        "id": "4691901269357288170",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494916779-5b25ec0e9eecd-b471c302-dca65ac1",
+        "user": "srbaddam@iu.edu",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+        "startTime": "2020-10-23T16:15:17.040-07:00",
+        "name": "operation-1603494916779-5b25ec0e9eecd-b471c302-dca65ac1",
+        "status": "RUNNING",
+        "progress": "0",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/4691901269357288170",
+        "operationType": "stop"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "ldanz1d7isa",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "2829298880795827483"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:16.827978Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494916779-5b25ec0e9eecd-b471c302-dca65ac1",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:17.777683009Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {
+          "time": "2020-10-23T23:15:17.160259Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "authorizationInfo": [
+        {
+          "permission": "compute.instances.stop",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "compute",
+            "name": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+            "type": "compute.instances"
+          }
+        }
+      ],
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      },
+      "response": {
+        "user": "srbaddam@iu.edu",
+        "startTime": "2020-10-23T16:15:17.039-07:00",
+        "@type": "type.googleapis.com/operation",
+        "operationType": "stop",
+        "status": "RUNNING",
+        "zone": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b",
+        "targetLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+        "targetId": "7852608551917640987",
+        "selfLinkWithId": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/4440592893098253034",
+        "id": "4440592893098253034",
+        "selfLink": "https://www.googleapis.com/compute/v1/projects/sumith-baddam/zones/us-east4-b/operations/operation-1603494916783-5b25ec0e9fef8-a5e7ca30-e23ccd3c",
+        "name": "operation-1603494916783-5b25ec0e9fef8-a5e7ca30-e23ccd3c",
+        "progress": "0",
+        "insertTime": "2020-10-23T16:15:17.019-07:00"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4-b"
+        ]
+      }
+    },
+    "insertId": "v34p3gd7kxo",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "instance_id": "7852608551917640987",
+        "project_id": "sumith-baddam"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:16.833861Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494916783-5b25ec0e9fef8-a5e7ca30-e23ccd3c",
+      "producer": "compute.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:18.147459421Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/map0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      }
+    },
+    "insertId": "2i0zbgcr9m",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7056788392284970288"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:16.920703Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494898573-5b25ebfd42020-b32dd729-d1dd508d",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:17.192660489Z"
+  },
+  {
+    "insertId": "1plna3qg3f2n3tf",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:17.4869Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) shutting down."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "7852608551917640987",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:17.487096916Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "reduce0",
+      "agent_version": "20200901.01-g1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "106",
+      "function": "main.run.func1"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:17.754159611Z"
+  },
+  {
+    "insertId": "1ddzzr0g3f4tcy6",
+    "jsonPayload": {
+      "localTimestamp": "2020-10-23T23:15:17.8967Z",
+      "message": "OSConfig Agent (version 20200901.01-g1) shutting down."
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "2829298880795827483"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:17.896761880Z",
+    "severity": "INFO",
+    "labels": {
+      "instance_name": "reduce1",
+      "agent_version": "20200901.01-g1"
+    },
+    "logName": "projects/sumith-baddam/logs/OSConfigAgent",
+    "sourceLocation": {
+      "file": "main.go",
+      "line": "106",
+      "function": "main.run.func1"
+    },
+    "receiveTimestamp": "2020-10-23T23:15:17.813114373Z"
+  },
+  {
+    "insertId": "2",
+    "jsonPayload": {
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent",
+      "shutdownEvent": {}
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "zone": "us-east4-b",
+        "instance_id": "2829298880795827483"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:19.368494395Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:21.374414819Z"
+  },
+  {
+    "insertId": "2",
+    "jsonPayload": {
+      "shutdownEvent": {},
+      "bootCounter": "1",
+      "@type": "type.googleapis.com/cloud_integrity.IntegrityEvent"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7852608551917640987"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:19.407002619Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/compute.googleapis.com%2Fshielded_vm_integrity",
+    "receiveTimestamp": "2020-10-23T23:15:21.426100991Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce1",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      }
+    },
+    "insertId": "m76ao1ct4o",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "sumith-baddam",
+        "instance_id": "2829298880795827483",
+        "zone": "us-east4-b"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:31.974835Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494916779-5b25ec0e9eecd-b471c302-dca65ac1",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:32.734940724Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "srbaddam@iu.edu"
+      },
+      "requestMetadata": {
+        "callerIp": "35.194.79.88",
+        "callerSuppliedUserAgent": "Python client library (gzip),gzip(gfe)",
+        "callerNetwork": "//compute.googleapis.com/projects/sumith-baddam/global/networks/__unknown__",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "compute.googleapis.com",
+      "methodName": "v1.compute.instances.stop",
+      "resourceName": "projects/sumith-baddam/zones/us-east4-b/instances/reduce0",
+      "request": {
+        "@type": "type.googleapis.com/compute.instances.stop"
+      }
+    },
+    "insertId": "-nv057pcq6y",
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-east4-b",
+        "project_id": "sumith-baddam",
+        "instance_id": "7852608551917640987"
+      }
+    },
+    "timestamp": "2020-10-23T23:15:34.286211Z",
+    "severity": "NOTICE",
+    "logName": "projects/sumith-baddam/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1603494916783-5b25ec0e9fef8-a5e7ca30-e23ccd3c",
+      "producer": "compute.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2020-10-23T23:15:34.727376221Z"
+  }
+]
